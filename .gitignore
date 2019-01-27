@@ -1,2 +1,4 @@
+data/img/faces
 dist/
 node_modules/
+yarn-error.log
