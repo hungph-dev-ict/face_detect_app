@@ -2,7 +2,7 @@ import * as cv from "opencv4nodejs";
 import * as path from "path";
 import { getDataPath } from "./commons";
 
-export async function createImageData(
+export function createImageData(
   classImageName: string,
   index: number,
   frame: any
@@ -10,7 +10,7 @@ export async function createImageData(
   const facesPath = path.resolve(getDataPath(), "img/faces");
   const facesFileName = path.resolve(
     facesPath,
-    classImageName + "_" + index + ".img"
+    classImageName + "_" + index + ".png"
   );
-  cv.imwriteAsync(facesFileName, frame);
+  cv.imwrite(facesFileName, frame);
 }

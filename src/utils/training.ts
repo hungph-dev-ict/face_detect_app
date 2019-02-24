@@ -7,7 +7,7 @@ import {
   ensureModelFilePathDirExists
 } from "./commons";
 
-export async function trainingNewModel(nameClass: Array<string>) {
+export function trainingNewModel(nameClass: Array<string>) {
   fr.winKillProcessOnExit();
   ensureModelFilePathDirExists();
 
